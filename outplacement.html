@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outplacement Services | Six Summit Advisors</title>
+<meta name="description" content="Outplacement and career transition services led personally by Jeff Bettinger, a former CHRO who has sat on both sides of the table. Real coaching, not a portal login.">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="canonical" href="https://sixsummitadvisors.com/outplacement">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sixsummitadvisors.com/outplacement">
+<meta property="og:title" content="Outplacement Services | Six Summit Advisors">
+<meta property="og:description" content="Outplacement your people will actually use. Career transition programs led personally by a former CHRO.">
+<meta property="og:image" content="https://sixsummitadvisors.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1c2350; --olive:#2d3d1f; --forest:#465f30; --green:#5f8141;
+  --ink:#1f2330; --muted:#5b6070; --line:#e3e5ec; --paper:#ffffff; --mist:#f5f6f2;
+  --sage:#ECF0E8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Open Sans",system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.btn,.eyebrow,nav a{font-family:"Montserrat",system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.narrow{max-width:720px}
+
+/* nav */
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.nav img{height:40px;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:600}
+.nav-links a.text{text-decoration:none;color:var(--navy)}
+.nav-links a.text:hover{color:var(--forest)}
+
+/* buttons */
+.btn{display:inline-block;padding:13px 24px;border-radius:6px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid var(--navy);transition:.15s;cursor:pointer}
+.btn-solid{background:var(--navy);color:#fff}
+.btn-solid:hover{background:var(--olive);border-color:var(--olive)}
+.btn-ghost{background:transparent;color:var(--navy)}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+.nav .btn{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:104px 0 96px;background:var(--mist)}
+.hero svg.topo{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
+.hero .wrap{position:relative}
+.eyebrow{display:block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);margin-bottom:18px}
+.hero h1{font-size:clamp(34px,5.4vw,56px);line-height:1.12;font-weight:800;color:var(--navy);max-width:860px;letter-spacing:-.01em}
+.hero p{font-size:20px;color:var(--muted);max-width:680px;margin:24px 0 36px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* sections */
+section{padding:96px 0}
+h2{font-size:clamp(28px,3.6vw,38px);line-height:1.2;color:var(--navy);font-weight:800;margin-bottom:16px;letter-spacing:-.01em}
+.lede{color:var(--muted);font-size:19px;max-width:680px;margin-bottom:48px}
+
+/* contrast band */
+.contrast{background:var(--navy);color:#fff}
+.contrast .eyebrow{color:#b9d39c}
+.contrast h2{color:#fff}
+.contrast .lede{color:#c8cbe0;margin-bottom:40px}
+.cx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cx-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:26px}
+.cx-item h3{font-size:18px;color:#fff;margin-bottom:8px}
+.cx-item p{font-size:15px;color:#c8cbe0}
+
+/* program cards */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card.bespoke{background:var(--navy);border-color:var(--navy)}
+.card.bespoke h3{color:#fff}
+.card.bespoke p,.card.bespoke li{color:#c8cbe0}
+.card.bespoke .tag{color:#b9d39c}
+.card.bespoke li{border-color:rgba(255,255,255,.14)}
+.card.bespoke li::before{background:#b9d39c}
+.card.bespoke .for{color:#c8cbe0;border-color:rgba(255,255,255,.14)}
+.card.bespoke .for strong{color:#fff}
+.card.bespoke .btn{border-color:#fff;color:#fff}
+.card.bespoke .btn:hover{background:#fff;color:var(--navy)}
+.card{border:1.5px solid #c3c7d6;border-radius:10px;padding:32px;display:flex;flex-direction:column;background:#fff;transition:.15s;box-shadow:0 8px 24px rgba(28,35,80,.10)}
+.card:hover{border-color:var(--forest);box-shadow:0 14px 34px rgba(28,35,80,.16);transform:translateY(-2px)}
+.card .tag{font-family:Montserrat,sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin-bottom:10px}
+.card h3{font-size:22px;color:var(--navy);margin-bottom:12px;line-height:1.3}
+.card p{color:var(--muted);margin-bottom:16px}
+.card ul{list-style:none;margin:0 0 20px}
+.card li{padding:9px 0 9px 28px;position:relative;font-size:15.5px;color:var(--ink);border-bottom:1px solid var(--line)}
+.card li:last-child{border-bottom:0}
+.card li::before{content:"";position:absolute;left:4px;top:17px;width:9px;height:9px;border-radius:2px;background:var(--forest)}
+.card .for{font-size:15px;color:var(--ink);border-top:1px solid var(--line);padding-top:16px;margin-top:auto;margin-bottom:20px}
+.card .for strong{font-family:Montserrat,sans-serif;font-size:13px;color:var(--navy)}
+.card .btn{align-self:flex-start}
+.card.lead{border-top:5px solid var(--olive)}
+.card.one{border-top:5px solid var(--navy)}
+
+/* modules */
+.modules{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.module{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 24px;display:flex;gap:18px;align-items:flex-start}
+.module .mn{font-family:Montserrat,sans-serif;font-weight:800;font-size:15px;color:#fff;background:var(--olive);border-radius:8px;min-width:40px;height:40px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.module h3{font-size:17px;color:var(--navy);margin-bottom:4px;line-height:1.35}
+.module p{font-size:14.5px;color:var(--muted)}
+.inside{background:var(--mist)}
+
+/* how it works */
+.how{background:#fff}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:var(--mist);border:1px solid var(--line);border-radius:10px;padding:26px}
+.step .n{font-family:Montserrat,sans-serif;font-size:12px;font-weight:700;color:var(--green);letter-spacing:.1em}
+.step h3{font-size:19px;color:var(--navy);margin:4px 0 8px}
+.step p{font-size:15px;color:var(--muted)}
+
+/* why jeff */
+.why-grid{display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:start}
+.why-grid img{width:100%;border-radius:10px;display:block;position:sticky;top:96px}
+.why p{margin-bottom:18px}
+.why p.pull{font-family:Montserrat,sans-serif;font-size:22px;font-weight:700;color:var(--navy);line-height:1.35}
+
+/* contact */
+form.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+label{display:flex;flex-direction:column;gap:6px;font-family:Montserrat,sans-serif;font-size:13px;font-weight:600;color:var(--navy)}
+form.contact input,select,textarea{font:inherit;font-size:16px;padding:12px 14px;border:1px solid #cfd3de;border-radius:6px;background:#fff;color:var(--ink)}
+form.contact input:focus,select:focus,textarea:focus{outline:2px solid var(--forest);border-color:var(--forest)}
+.full{grid-column:1/-1}
+.alt{margin-top:28px;color:var(--muted);font-size:15px}
+.alt a{color:var(--navy);font-weight:600}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:48px 0;font-size:14px;color:var(--muted)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px}
+.foot img{height:34px}
+.foot a{color:var(--navy);font-weight:600}
+.tagline{font-style:italic;color:var(--navy)}
+.mjj{margin-top:24px;padding-top:24px;border-top:1px solid var(--line)}
+
+@media (max-width:820px){
+  .cards,.steps,.cx-grid,.modules{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr;gap:32px}
+  .why-grid img{position:static;max-width:360px}
+  form.contact{grid-template-columns:1fr}
+  .nav-links a.text{display:none}
+  section{padding:72px 0}
+  .hero{padding:72px 0 64px}
+}
+@media (max-width:420px){ .nav img{height:30px} .nav .btn{padding:9px 12px;font-size:13px} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" aria-label="Six Summit Advisors home"><img src="/ssa-logo.png" alt="Six Summit Advisors"></a>
+    <div class="nav-links">
+      <a class="text" href="#programs">Programs</a>
+      <a class="text" href="#inside">Inside the program</a>
+      <a class="text" href="#how">How it works</a>
+      <a class="text" href="#why">Why me</a>
+      <a class="text" href="/">Main site</a>
+      <a class="btn btn-solid" href="#contact">Start a conversation</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <svg class="topo" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#465f30" stroke-width="1.2" opacity=".35">
+      <path d="M-50 520 C200 470 330 380 520 400 S860 520 1250 430"/>
+      <path d="M-50 470 C210 420 340 330 530 350 S870 470 1250 380"/>
+      <path d="M-50 420 C220 370 350 280 540 300 S880 420 1250 330"/>
+      <path d="M-50 370 C230 320 360 230 560 250 S890 370 1250 280"/>
+      <path d="M-50 320 C240 270 380 180 580 200 S900 320 1250 230"/>
+      <path d="M-50 270 C250 220 400 130 600 150 S910 270 1250 180"/>
+      <path d="M-50 220 C260 170 420 80 620 100 S920 220 1250 130"/>
+      <path d="M-50 170 C270 120 440 30 640 50 S930 170 1250 80"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <span class="eyebrow">Outplacement and career transition services</span>
+    <h1>Outplacement your people will actually use.</h1>
+    <p>I'm Jeff Bettinger. I've been the executive buying outplacement for companies, and I've watched too many programs turn into a portal login and a couple of phone calls. When you have to let good people go, I give them a real coach, a real plan, and a real path to their next role. I've done this work with over 800 people across more than 20 companies.</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#contact">Start a conversation</a>
+      <a class="btn btn-ghost" href="#programs">See the programs</a>
+    </div>
+  </div>
+</section>
+
+<section class="contrast">
+  <div class="wrap">
+    <span class="eyebrow">Why this is different</span>
+    <h2>Most outplacement checks a box. This changes an outcome.</h2>
+    <p class="lede">I've spent years on the corporate side of outplacement, and I've heard the same review too many times: people met with somebody once or twice, poked around a resource library, and quietly stopped logging in. Here's what your people get instead.</p>
+    <div class="cx-grid">
+      <div class="cx-item">
+        <h3>A coach who has made the hiring decisions</h3>
+        <p>Every one-on-one is with me, not a rotating bench of counselors. I've spent my career in the rooms where hiring and promotion decisions get made, and I use that to position your people the right way.</p>
+      </div>
+      <div class="cx-item">
+        <h3>The emotional work comes first</h3>
+        <p>A layoff lands hard, even when people saw it coming. Before we touch a resume, we work through the anger and disappointment so they can walk into interviews clear, not carrying it with them.</p>
+      </div>
+      <div class="cx-item">
+        <h3>A current playbook, not a dated binder</h3>
+        <p>The program teaches people to run a modern search, including how to put AI tools to work in it. I keep it updated because the job market doesn't hold still.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="programs">
+  <div class="wrap">
+    <span class="eyebrow">The programs</span>
+    <h2>Four tiers, one system</h2>
+    <p class="lede">Every tier is built on the full Breakthrough Blueprint. The difference is how much one-on-one time your people get with me, matched to the level of the role and the situation.</p>
+
+    <div class="cards">
+      <article class="card">
+        <span class="tag">Tier 1 · Self-guided</span>
+        <h3>Course Access</h3>
+        <p>The complete system, self-paced. Everything they need to run a modern search on their own.</p>
+        <ul>
+          <li>All ten modules, 7.5 hours of on-demand video</li>
+          <li>35 worksheets to craft their story and run the process</li>
+          <li>The full resume template library</li>
+        </ul>
+        <p class="for"><strong>BEST FOR</strong><br>Self-starters who need the system, not the coach.</p>
+        <a class="btn btn-ghost" href="#contact" data-interest="Tier 1: Course Access">Contact me to discuss your needs</a>
+      </article>
+
+      <article class="card lead">
+        <span class="tag">Tier 2 · Course + coaching</span>
+        <h3>Career Transition Program</h3>
+        <p>The full course plus enough one-on-one time with me to get each person through their sticking points.</p>
+        <ul>
+          <li>Everything in Course Access</li>
+          <li>Four one-on-one coaching sessions with me</li>
+          <li>Sessions usable any time across six months</li>
+        </ul>
+        <p class="for"><strong>BEST FOR</strong><br>Managers and directors who need structure, momentum, and a coach in their corner.</p>
+        <a class="btn btn-ghost" href="#contact" data-interest="Tier 2: Career Transition Program">Contact me to discuss your needs</a>
+      </article>
+
+      <article class="card one">
+        <span class="tag">Tier 3 · Extended coaching</span>
+        <h3>Extended Transition Program</h3>
+        <p>For searches that need more runway. Some people land in two months, and some need help negotiating an offer months later.</p>
+        <ul>
+          <li>Everything in the Career Transition Program</li>
+          <li>Five additional one-on-one sessions, nine in all</li>
+          <li>Six months of coaching access</li>
+        </ul>
+        <p class="for"><strong>BEST FOR</strong><br>Senior leaders, longer searches, and the special cases that need more of me.</p>
+        <a class="btn btn-ghost" href="#contact" data-interest="Tier 3: Extended Transition Program">Contact me to discuss your needs</a>
+      </article>
+
+      <article class="card bespoke">
+        <span class="tag">Tier 4 · Designed with you</span>
+        <h3>Bespoke Customized Options</h3>
+        <p>Built around the person and the situation: executive transitions, sensitive separations, and the roles where the next move has to be right.</p>
+        <ul>
+          <li>Coaching cadence shaped to the search</li>
+          <li>Executive narrative and market positioning</li>
+          <li>Board-level interview preparation</li>
+          <li>Offer evaluation and compensation negotiation support</li>
+        </ul>
+        <p class="for"><strong>BEST FOR</strong><br>VPs and C-suite leaders, and situations that don't fit a standard package.</p>
+        <a class="btn" href="#contact" data-interest="Tier 4: Bespoke Customized Options">Contact me to discuss your needs</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="inside" class="inside">
+  <div class="wrap">
+    <span class="eyebrow">Inside every tier</span>
+    <h2>The Breakthrough Blueprint</h2>
+    <p class="lede">Ten modules. 7.5 hours of video, 35 worksheets, and 18 resume templates, built from my years of moving leaders into their next role. Your people work through it on their own schedule, with me coaching them through the parts that matter most.</p>
+    <div class="modules">
+      <div class="module"><span class="mn">1</span><div><h3>Introduction to Career Transitions</h3><p>How the system works, and real stories from people who have run it.</p></div></div>
+      <div class="module"><span class="mn">2</span><div><h3>Processing the Transition</h3><p>Working through the change curve and the emotions of leaving, so the search starts clear instead of angry.</p></div></div>
+      <div class="module"><span class="mn">3</span><div><h3>Branding Yourself for the Breakthrough</h3><p>A full online audit and a LinkedIn presence that gets them found by the right people.</p></div></div>
+      <div class="module"><span class="mn">4</span><div><h3>The Master Resume System</h3><p>One master resume that flexes to target any role, with the tools to write bullets that actually land.</p></div></div>
+      <div class="module"><span class="mn">5</span><div><h3>The Search</h3><p>Targeting the right companies, cultures, and managers instead of spraying applications into the void.</p></div></div>
+      <div class="module"><span class="mn">6</span><div><h3>Ace the Interview</h3><p>Every format, from the screening call to the board interview.</p></div></div>
+      <div class="module"><span class="mn">7</span><div><h3>The STARZ Method</h3><p>Behavioral interview stories that showcase leadership, thought process, and impact.</p></div></div>
+      <div class="module"><span class="mn">8</span><div><h3>Negotiating Your Offer</h3><p>Knowing their numbers, reading the full pay picture, buying time, and saying yes or no with confidence.</p></div></div>
+      <div class="module"><span class="mn">9</span><div><h3>Landing Well</h3><p>Onboarding with intention: a 100 day plan so the next role starts strong.</p></div></div>
+      <div class="module"><span class="mn">10</span><div><h3>AI and the Modern Search</h3><p>Putting AI tools to work on salary research, resume refinement, and company intelligence.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="how">
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h2>Simple for you, personal for them</h2>
+    <p class="lede">You're managing a hard moment for your organization. The program should make that easier, not add to it.</p>
+    <div class="steps">
+      <div class="step">
+        <span class="n">STEP 1</span>
+        <h3>We scope it in one call</h3>
+        <p>Tell me who's impacted and at what levels. We match each person to the right program, and I flex to your timeline, whether that's one person this month or a phased reduction.</p>
+      </div>
+      <div class="step">
+        <span class="n">STEP 2</span>
+        <h3>Your people start fast</h3>
+        <p>Each participant gets program access and books their first session with me directly. No intake queue, no handoffs. Delivery is virtual, and I work globally.</p>
+      </div>
+      <div class="step">
+        <span class="n">STEP 3</span>
+        <h3>You pay for engagement, not seats</h3>
+        <p>You're only invoiced when a person chooses to engage in the program. If someone already has their next role lined up and passes, you don't pay for a benefit nobody used.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap why-grid">
+    <img src="/jeff-portrait.jpg" alt="Jeff Bettinger">
+    <div class="narrow why">
+      <span class="eyebrow">Why me</span>
+      <h2>I've sat on your side of the table.</h2>
+      <p class="pull">I've been the executive signing off on reductions, and the one helping people land afterward. Both sides of that experience show up in this work.</p>
+      <p>I've spent my career in executive roles across private equity, publicly traded, and SMB companies, leading HR, legal, and strategy. I know what a well-run separation looks like from the inside, and I know what it does for your employer brand when departing people say they were treated well.</p>
+      <p>I've also been helping people land since 2008, when I started HelpMyResume.com. Over 800 people across more than 20 companies have done this work with me. The program your people get today is the system I built from all of it, and I keep it current as the market and the tools change.</p>
+      <p>And it gets personal, by design. A career transition touches identity, confidence, and family, not just a resume. People open up in this work, and that's usually where the breakthrough happens.</p>
+      <p>In the Six Summits framework I coach from, this is Weathered: every leader gets a storm. A layoff is one of them, and nobody should have to navigate it alone.</p>
+      <p>Severance is money. Outplacement done right is momentum. When your people leave with a plan, a story, and a coach who has made the hiring decisions they're about to face, that lands differently, for them and for everyone still at the company watching how you handled it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap narrow">
+    <span class="eyebrow">Start a conversation</span>
+    <h2>Tell me about your situation.</h2>
+    <p class="lede" style="margin-bottom:32px">A few details help me come to our first call already useful. I'll reply within one business day, and everything stays confidential.</p>
+    <form class="contact" id="contactForm">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Company &amp; title<input name="company"></label>
+      <label>Roughly how many people affected?<input name="headcount" placeholder="One person, a team, a phased reduction..."></label>
+      <label class="full">I'm interested in
+        <select name="interest" id="interest">
+          <option>Tier 1: Course Access</option>
+          <option>Tier 2: Career Transition Program</option>
+          <option>Tier 3: Extended Transition Program</option>
+          <option>Tier 4: Bespoke Customized Options</option>
+          <option>Not sure yet</option>
+          <option>Outplacement for myself</option>
+        </select>
+      </label>
+      <label class="full">What's the situation?<textarea name="message" rows="5" placeholder="Levels affected, timing, anything else useful. A few sentences is plenty."></textarea></label>
+      <div class="full"><button class="btn btn-solid" type="submit">Send</button></div>
+    </form>
+    <p class="alt">Prefer to skip the form? <a href="https://api.leadconnectorhq.com/widget/bookings/sixsummit-jeff-15" target="_blank" rel="noopener">Book a 15 minute call</a> or email <a href="mailto:jbettinger@sixsummitadvisors.com">jbettinger@sixsummitadvisors.com</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="/ssa-logo.png" alt="Six Summit Advisors">
+      <span class="tagline">At altitude, it's all talent.</span>
+      <div><a href="/">sixsummitadvisors.com</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/jeffbettinger/" target="_blank" rel="noopener">Follow Jeff on LinkedIn</a></div>
+    </div>
+    <div class="foot mjj">
+      <span>In transition on your own? That's <a href="https://myjobjump.com" target="_blank" rel="noopener">My Job Jump</a>.</span>
+      <span>&copy; <span id="yr">2026</span> Six Summit Advisors</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.querySelectorAll('[data-interest]').forEach(function(a){
+  a.addEventListener('click', function(){ document.getElementById('interest').value = a.dataset.interest; });
+});
+var EMAIL_ENDPOINT = 'https://formsubmit.co/ajax/jbettinger@sixsummitadvisors.com';
+function emailJeff(subject, fields){
+  var payload = Object.assign({ _subject: subject, _template: 'table' }, fields);
+  return fetch(EMAIL_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(payload)
+  });
+}
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = e.target, v = function(n){ return (f[n].value || '').trim(); };
+  var btn = f.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  emailJeff('Outplacement inquiry: ' + v('interest'), {
+    Name: v('name'), Email: v('email'), 'Company and title': v('company'),
+    'People affected': v('headcount'), 'Interested in': v('interest'), Situation: v('message'),
+    Source: 'sixsummitadvisors.com/outplacement',
+    _replyto: v('email')
+  }).then(function(r){
+    if (!r.ok) throw new Error('send failed');
+    f.innerHTML = '<p class="full" style="font-size:17px;color:var(--ink)">Thanks, ' + v('name').split(' ')[0] +
+      ". Your note is on its way to me and I'll reply within one business day.</p>";
+  }).catch(function(){
+    var body = 'Name: ' + v('name') + '\nEmail: ' + v('email') + '\nCompany/Title: ' + v('company') +
+               '\nPeople affected: ' + v('headcount') + '\nInterested in: ' + v('interest') + '\n\n' + v('message');
+    window.location.href = 'mailto:jbettinger@sixsummitadvisors.com?subject=' +
+      encodeURIComponent('Outplacement inquiry: ' + v('interest')) + '&body=' + encodeURIComponent(body);
+    btn.disabled = false;
+    btn.textContent = 'Send';
+  });
+});
+</script>
+</body>
+</html>
